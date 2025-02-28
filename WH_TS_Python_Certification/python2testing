@@ -12,3 +12,5 @@ print(5 * 'a')
 print('b' * 4)
 
 print('a')
+
+print('b')
