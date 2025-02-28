@@ -1,0 +1,125 @@
+#LAB2
+
+#chatgpt
+
+def display_number(number):
+    # The 5x3 patterns for digits 0-9
+    segments = [
+        ['###', '# #', '# #', '# #', '###'],  # 0
+        ['  #', '  #', '  #', '  #', '  #'],  # 1
+        ['###', '  #', '###', '#  ', '###'],  # 2
+        ['###', '  #', '###', '  #', '###'],  # 3
+        ['# #', '# #', '###', '  #', '  #'],  # 4
+        ['###', '#  ', '###', '  #', '###'],  # 5
+        ['###', '#  ', '###', '# #', '###'],  # 6
+        ['###', '  #', '  #', '  #', '  #'],  # 7
+        ['###', '# #', '###', '# #', '###'],  # 8
+        ['###', '# #', '###', '  #', '###'],  # 9
+    ]
+    
+    # Convert the input number to string to iterate over digits
+    number_str = str(number)
+    
+    # Initialize the output as a list of 5 rows, each row will be a string
+    output = ['' for _ in range(5)]
+    
+    # Loop over each digit in the input number
+    for digit in number_str:
+        # Convert the digit character to an integer and fetch the segment pattern
+        digit_segments = segments[int(digit)]
+        
+        # Append each row of the segment pattern to the corresponding row in output
+        for i in range(5):
+            output[i] += digit_segments[i] + ' '  # Add a space between digits
+
+    # Print each row of the output
+    for row in output:
+        print(row.rstrip())  # Remove the trailing space
+
+# Example usage:
+# Display the number 123
+display_number(123)
+
+# Display the number 9081726354
+display_number("9081726354")
+
+
+number = 0
+num_list = ["""### 
+# # 
+# # 
+# # 
+### """, 
+"""#
+#    
+#    
+#   
+# """,
+"""### 
+  # 
+### 
+#   
+### """,
+"""### 
+  # 
+### 
+  # 
+### """,
+"""# # 
+# # 
+### 
+  # 
+  # """,
+"""### 
+#   
+### 
+  # 
+### """,
+"""### 
+#
+###
+# #
+###""",
+"""### 
+  # 
+  # 
+  # 
+  # """,
+
+"""### 
+# # 
+### 
+# # 
+### """,
+
+"""### 
+# # 
+### 
+  # 
+### """ ]
+while (number != -1):
+    number = int(input("Enter a number, or put -1 to exit:  "))
+    numberString = str(number)
+    for num in numberString:
+        match num:
+            case '0':
+                print(num_list[0], end = "")
+            case '1':
+                print(num_list[1], end = "")
+            case '2':
+                print(num_list[2], end = "")
+            case '3':
+                print(num_list[3], end = "")
+            case '4':
+                print(num_list[4], end = "")
+            case '5':
+                print(num_list[5], end = "")
+            case '6':
+                print(num_list[6], end = "")
+            case '7':
+                print(num_list[7], end = "")
+            case '8':
+                print(num_list[8], end = "")
+            case '9':
+                print(num_list[9], end = "")
+    print()
