@@ -18,6 +18,7 @@ def display_number(number):
         
     ]
     
+    
     # Convert the input number to string to iterate over digits
     number_str = str(number)
     
