@@ -3,6 +3,7 @@
 iban = input("Enter IBAN, please: ")
 iban = iban.replace(' ','')
 
+
 if not iban.isalnum():
     print("You have entered invalid characters.")
 elif len(iban) < 15:
