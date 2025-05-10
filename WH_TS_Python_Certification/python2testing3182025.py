@@ -4,5 +4,6 @@ except ZeroDivisionError:
     print("zero")
 except IndexError:
     print("index")
+    
 except:
     print("some")
