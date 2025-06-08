@@ -5,4 +5,5 @@ except ZeroDivisionError:
 except IndexError:
     print("index")
 except:
+    
     print("some")
