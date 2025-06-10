@@ -1,0 +1,292 @@
+2025-06-10 10:47:13.540382 - [START] Converting file: C:/Users/dtaylor/Documents/GitHub/DT_City_WH_Technology_Services/PDFScraperGUI/PDFScraperNew/testPDFs/25051023 Effluent Analysis 05.20.25.pdf
+2025-06-10 10:47:13.542028 - [INFO] Falling back to OCR...
+2025-06-10 10:47:19.667554 - [DEBUG] Saved page image for OCR: C:\Users\dtaylor\Documents\GitHub\DT_City_WH_Technology_Services\PDFScraperGUI\PDFScraperNew\dist\debug_images\page_1.png
+2025-06-10 10:47:20.913507 - [DEBUG] OCR output from page 1:
+FDOH Certification #E84167
+
+BENCHMARK ©
+
+EnviroAnalytical, Ine.
+
+ANALYTICAL TEST REPORT
+THESE RESULTS MEET NELAC STANDARDS
+
+Submission Number: — 25051023
+
+City Of Winter Haven Wwtp #3
+4400 Pollard Road
+Winter Haven, FL 33884
+
+Steve Lamons/Frank O
+
+Submission Number: — 25051023
+Sample Number: 001
+Sample Description: EFA-001
+
+Parameter Result
+
+CARBONACEOUS BOD 1U
+
+Project Name :
+Date Received; 05/20/2025
+Time Received: 14:43
+
+Sample Date: 06/20/2025
+Sample Time: 07:30
+Sample Method: Composite
+
+. Analysis
+Units MDL 4 Pal Procedure Date/Time Analyst
+MG/L 41 4 $M6210B 05/20/2025 17:56 LOR
+
+SA
+
+Dr. Dale D. Dixon
+Haley Richardson
+
+Laboratory Director
+QC Manager / Leah Lepore
+
+DATA QUALIFIERS THAT MAY APPLY:
+
+A= Valus reported is an average of two or more determinations.
+
+B = Resulls based upon colony counts autside the ideal range.
+
+H = Value based on field kit datermination. Results may not be accurate,
+{= Reported value is between the laboratory MDL and the PQL.
+‘stimated value. Surrogate recovery limits exceeded,
+
+‘stimated value. No quality contro! criteria exists for component,
+
+J
+J
+Ji
+J Estimated value. Sample matrix interference suspacted.
+J
+
+K = Off-scale low. Value is known ta be < the value reported.
+L = Off-scale high. Value is known to be > the value reported.
+N = Presumptive evidence of presence of material,
+
+O = Sampled, but analysis lost or not performed.
+
+Q = Sample held beyond accepted hold time.
+
+NOTES:
+
+MBAS calculated as LAS; motecular weight = 340.
+PQL = 4xMDL,
+ND = Not detected at or above the adjusted reporting limit.
+
+‘stimated value. Quality contro! crileria for precision or accuracy not met.
+
+stimated value. Data questionable due to improper lab or field protocols,
+
+05/28/2025
+Date
+
+QC Officer
+
+T = Value reported is < MDL, Reported for informational purposes only and shall not be used
+in statistical analysis.
+
+Us Analyte analyzed but not detected at the value indicated,
+
+V = Analyte detected in sample and method blank. Results for this analyte in associated
+samples may be biased high. Standard, Duplicate and Spike values are within control limits.
+Reported data are usable,
+
+Y = Analysis performed on an improperly preserved sample, Data may be inaccurate.
+
+Z= Too many colonies were present (TNTC). The numeric value represents the filtration volume,
+| = Data deviate from historically established concentration ranges.
+
+?-= Data rejected and should not be used. Some or all of QC data were outside criteria, and
+the presence or absence of the analyte cannot be determined from the data.
+
+* = Not reported due to interference.
+
+Oil & Grease - If client does not send sufficient sample quantity for spike evaluation surface
+water samples are supplied by the laboratory.
+
+COMMENTS:
+
+G1 = Accuracy standard does not meet method control limits, but does meet lab contro! limits
+
+that are in agreement with USEPA generated data, USEPA lelter available upon requost. ,
+G2 = Accuracy standard exceads acceptable contro! limits. Duplicate and spike values are
+
+within control limits. Reported data are usable.
+
+Eor questions or comments regarding these results, please contact us at (941) 723-9986.
+
+Results relate only to the samples.
+
+EA ee
+26051023 1711 12th Street East * Palmetto, FL 34221 * Phone (941) 723-9986 * Fax (941) 723-6061 PAGE 1 OF 2
+
+
+------------------------------------------------------------
+2025-06-10 10:47:21.806560 - [INFO] Rotated page 2 by 90° for OCR alignment.
+2025-06-10 10:47:21.980923 - [DEBUG] Saved page image for OCR: C:\Users\dtaylor\Documents\GitHub\DT_City_WH_Technology_Services\PDFScraperGUI\PDFScraperNew\dist\debug_images\page_2.png
+2025-06-10 10:47:23.059311 - [DEBUG] OCR output from page 2:
+Benchmark EnviroAnalytical, Inc.
+1711 Twelfth Street East
+
+Palmetto, FL. 34221
+
+(941) 723-9986
+
+(941) 723-6061 fax
+
+www.Benchmarkea.com
+Sample Temperature checked upon receipt with Temperature Gun ID #258
+
+Client: City of Winter Haven WWTP #3
+
+4400 Pollard Road, Winter Haven, FL 33884
+863-291-5763
+
+Steve Lamons 863-651-1147
+Slamons@mywinterhaven.com
+
+Jean Charles JCharles@mywinterhaven.com
+Frank O'Neal FONeal@mywinterhaven.com
+
+Chain of Custody Form: Laboratory Submission #:
+ApS | 082
+Sample Semple Seeele Collection Total # of Containers=2 | Preservative’ Parameters for Analysis Laboratory
+Name “m a Date Time Qty | Capacity Type? Sample #
+EFA-001 ww] C 2 OL 1} 1@ P Plain CBOD sws2108 ° 1
+, sud” LO-ES oa DRT30
+4‘
+| EFB-001 ww! G =} 1a P Plain TDS smasaoc TSS smrsa00 2
+
+Chlorine residual at time of collection:
+
+“Sample Type" is used to indicate whether the sample was a grab (G) or whether it was a composite (C).
+“Container Type” is used to indicate whether the container is plastic (P) or glass (G).
+
+‘manufacturing stage. 4OmL. vials are pre-preserved at manufacturing stage.
+
+All bottles not containing preservative may be rinsed with appropriate sample prior to collection.
+‘The client is responsible for documentation of the sampling cvent. Please note special sampling events on the sample custody form,
+‘Sample kit has been created by BEA using new, certifiedboitles.
+
+Samples received on ice:
+
+‘Sample must be refrigerated or stored in wet ice after collection. The temperature during storage should be less than or equal to G°C (42.8°F).
+Under “Preservative,” list any preservatives that were added to the simple container. Lot Number of preservative used is specific to the boitles included in the kit. NaThio, H,SO, and HNO; do not have expiration dates per the manufucturer. Micro boitles are pre-preserved at -——————_——--—
+
+Laboratory Sample Acceptability:
+
+Each bottle has a label identifying sample ID, premeasured preservative contained in the bottle, sample type, client ID, and parameters for analysis
+‘The following information should be added to cach bottle label after collection with permanent black ink: date and time of collection, sampler's name or initials, and any field number or ID.
+
+Turbidity at time of collection:
+
+“Sample Matrix” is used to indicate whether the sample is being discharged to drinking water (DW), groundwater (GW), surface water (SW). fresh surface water (FSW), saline surface water (SSW), soil, sediment (SDMNT), or sludge (SLDG).
+
+Collector & Affiliation:
+J | @rint & Sign)
+
+Relinquishe,
+2 | (Print & Sigi
+
+(Print & Sign)
+
+Time;
+
+lf
+
+lyuz"
+
+Relinquished By & Affiliation:
+
+¢ iy B iati \ Date:
+Received By & Affiliation: ee Date:
+
+Received By & Affiliation:
+
+Date:
+
+Time:
+
+3 | @rint & Sign) @rint & Sign)
+Relinquished By & Affiliation: Date: Time: Received By & Affiliation: Date: Time:
+4 | (Print & Sign) (Print & Sign)
+Page of
+
+
+------------------------------------------------------------
+2025-06-10 10:47:23.062361 - [INFO] Final text used for parsing (first 1000 chars):
+FDOH Certification #E84167
+
+BENCHMARK ©
+
+EnviroAnalytical, Ine.
+
+ANALYTICAL TEST REPORT
+THESE RESULTS MEET NELAC STANDARDS
+
+Submission Number: — 25051023
+
+City Of Winter Haven Wwtp #3
+4400 Pollard Road
+Winter Haven, FL 33884
+
+Steve Lamons/Frank O
+
+Submission Number: — 25051023
+Sample Number: 001
+Sample Description: EFA-001
+
+Parameter Result
+
+CARBONACEOUS BOD 1U
+
+Project Name :
+Date Received; 05/20/2025
+Time Received: 14:43
+
+Sample Date: 06/20/2025
+Sample Time: 07:30
+Sample Method: Composite
+
+. Analysis
+Units MDL 4 Pal Procedure Date/Time Analyst
+MG/L 41 4 $M6210B 05/20/2025 17:56 LOR
+
+SA
+
+Dr. Dale D. Dixon
+Haley Richardson
+
+Laboratory Director
+QC Manager / Leah Lepore
+
+DATA QUALIFIERS THAT MAY APPLY:
+
+A= Valus reported is an average of two or more determinations.
+
+B = Resulls based upon colony counts autside the ideal range.
+
+H = Value based on field kit datermination. Results may not be accurate,
+{= Reported value is between the laboratory MDL and the PQL.
+‘stimated value. Surrogate r...
+================================================================================
+2025-06-10 10:47:23.063936 - [DEBUG] Metadata extracted: {'Client Name': 'Unknown', 'Area Name': 'Unknown', 'Site Name': 'Unknown', 'Manhole Name': 'Unknown', 'pH': 'one', 'EC': '', 'ORP': '', 'Temp': ''}
+2025-06-10 10:47:23.065324 - [DEBUG] Found 9 parameters.
+2025-06-10 10:47:23.066236 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', '3', 'no', '4400', 'Pollard', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.066719 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'FL', 'no', '33884', 'Steve', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.067160 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'Composite', 'no', '.', 'Analysis', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.067614 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'MDL', 'no', '4', 'Pal', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.068193 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'L', 'no', '41', '4', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.068617 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'ee', 'no', '26051023', '1711', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.069032 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', '3', 'no', '4400', 'Pollard', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.069452 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'C', 'no', '2', 'OL', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.069877 - [DEBUG] Writing row: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Sample001', '2025-06-06', '12:00', 'Sector', 'No', 'Grab', 'ABC Labs', 'one', '', '', '', 'smrsa00', 'no', '2', 'Chlorine', '1.0', 'MH001', 'GIS-0001', 'East WWTP', 'no', 'no']
+2025-06-10 10:47:23.070881 - [SUCCESS] CSV saved to: C:/Users/dtaylor/Documents/GitHub/DT_City_WH_Technology_Services/PDFScraperGUI/PDFScraperNew/testPDFs/TEST_25051023 Effluent Analysis 05.20.25.csv
+2025-06-10 10:47:23.204374 - [INFO] Cleaned up temporary directory: C:\Users\dtaylor\AppData\Local\Temp\tmp63sgev14
+2025-06-10 10:47:23.204728 - [DONE] Conversion complete.

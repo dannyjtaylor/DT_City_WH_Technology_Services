@@ -1,0 +1,16 @@
+Client Name,Area Name,Site Name,Manhole Name,sample id,Sampling Date,Collection Time,Sector,Automated S.,Sampling Type,Lab Name,pH (Field Measurement),EC (Field Measurement),ORP (Field Measurement),Temperature (Field Measurement),name/Parameter,is_exceeded,value,units,NVL (Log10),Manhole ID,Gis ID,WWTP,Below detection limit,No analysis was performed
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,E84567,no,4400,Pollard,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,Fl,no,33884,ANALYTICAL,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,M25050246,no,001,EFA,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,M25050246,no,001,EFA,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,SOLIDS,no,622,MG/L,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,570,no,2.280,SM2540D,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,1,no,4,SM5210B,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,Page,no,1,of,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,E84567,no,1153,1,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,FL,no,33880,Palmetto,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,3,no,4400,Pollard,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,Grab,no,2,100mML,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,Temperature,no,3.6,oO,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,asteas,no,2,1D,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,Sills,no,1505,Date,1.0,MH001,GIS-0001,East WWTP,no,no

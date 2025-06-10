@@ -1,0 +1,10 @@
+Client Name,Area Name,Site Name,Manhole Name,sample id,Sampling Date,Collection Time,Sector,Automated S.,Sampling Type,Lab Name,pH (Field Measurement),EC (Field Measurement),ORP (Field Measurement),Temperature (Field Measurement),name/Parameter,is_exceeded,value,units,NVL (Log10),Manhole ID,Gis ID,WWTP,Below detection limit,No analysis was performed
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,3,no,4400,Pollard,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,FL,no,33884,Steve,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,Composite,no,.,Analysis,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,MDL,no,4,Pal,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,L,no,41,4,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,ee,no,26051023,1711,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,3,no,4400,Pollard,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,C,no,2,OL,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,one,,,,smrsa00,no,2,Chlorine,1.0,MH001,GIS-0001,East WWTP,no,no
