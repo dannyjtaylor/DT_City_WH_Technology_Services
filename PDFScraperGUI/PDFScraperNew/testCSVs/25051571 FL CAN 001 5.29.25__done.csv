@@ -1,0 +1,17 @@
+Client Name,Area Name,Site Name,Manhole Name,sample id,Sampling Date,Collection Time,Sector,Automated S.,Sampling Type,Lab Name,pH (Field Measurement),EC (Field Measurement),ORP (Field Measurement),Temperature (Field Measurement),name/Parameter,is_exceeded,value,units,NVL (Log10),Manhole ID,Gis ID,WWTP,Below detection limit,No analysis was performed
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,FL,no,33884,Time,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,CAN,no,001,Sample,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,UGIL,no,2,8,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,MANGANESE,no,219,UG/L,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,ZINC,no,218,UG/L,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,COPPER,no,19.6,UG/L,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,FLUORIDE,no,39.8,MG/L,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,L,no,0.008,0,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,25081871,no,1711,12th,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,260518714,no,1711,12th,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,PAGE,no,2,OF,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,Program,no,4400,Pollard,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,CAN,no,001,Comp,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,vas,no,2,gab,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,_,no,.,sonuiicuring,1.0,MH001,GIS-0001,East WWTP,no,no
+Unknown,Unknown,Unknown,Unknown,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,OSPHORUS AS P 0,,,,has,no,2,label,1.0,MH001,GIS-0001,East WWTP,no,no

@@ -1,0 +1,2 @@
+Client Name,Area Name,Site Name,Manhole Name,sample id,Sampling Date,Collection Time,Sector,Automated S.,Sampling Type,Lab Name,pH (Field Measurement),EC (Field Measurement),ORP (Field Measurement),Temperature (Field Measurement),name/Parameter,is_exceeded,value,units,NVL (Log10),Manhole ID,Gis ID,WWTP,Below detection limit,No analysis was performed
+Client,Area,Site,Manhole,Sample001,2025-06-06,12:00,Sector,No,Grab,ABC Labs,7.8,,,,Ammonia,No,0.15,mg/L,1.0,MH001,GIS-0001,East WWTP,No,No
