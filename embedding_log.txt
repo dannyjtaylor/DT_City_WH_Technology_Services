@@ -1,0 +1,4 @@
+✅ Embedded: test.docx
+✅ Embedded: test.pdf
+✅ Embedded: test.pptx
+✅ Embedded: test.txt

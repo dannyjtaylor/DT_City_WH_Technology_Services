@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Winter Haven AI Assistant</title>
+</head>
+<body>
+    <h1>Ask Winter Haven AI Assistant</h1>
+    <form id="askForm">
+        <input type="text" id="question" name="question" placeholder="Type your question..." style="width:300px;">
+        <button type="submit">Ask</button>
+    </form>
+    <p><strong>Answer:</strong></p>
+    <div id="response" style="white-space: pre-wrap;"></div>
+    <hr>
+    <h2>Upload Document</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <hr>
+    <a href="/logs">View Embedding Logs</a>
+    <script>
+        document.getElementById("askForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const form = new FormData(e.target);
+            const res = await fetch("/ask", { method: "POST", body: form });
+            const data = await res.json();
+            document.getElementById("response").textContent = data.answer;
+        });
+    </script>
+</body>
+</html>
