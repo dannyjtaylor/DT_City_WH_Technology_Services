@@ -1,5 +1,10 @@
 
 import os
+import json
+from fastapi import FastAPI, Request, UploadFile, File, Form
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 from dotenv import load_dotenv
 from openai import OpenAI
 import chromadb
@@ -8,129 +13,126 @@ from docx import Document
 from pptx import Presentation
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-# === Environment Setup ===
-dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
-load_dotenv(dotenv_path)
-
+# Load environment variables
+load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
-if not api_key:
-    raise ValueError("❌ OPENAI_API_KEY not found. Check your .env file.")
-
 client = OpenAI(api_key=api_key)
 
-# === Vector DB Setup ===
+# Initialize Chroma vector store
 chroma_client = chromadb.Client()
 collection = chroma_client.get_or_create_collection(name="city_docs")
 
+# File and embedding settings
 SUPPORTED_EXTENSIONS = [".txt", ".docx", ".pptx", ".pdf"]
+CACHE_FILE = "embed_cache.json"
 LOG_FILE = "embedding_log.txt"
+DATA_DIR = "data"
 
-# === File Readers ===
-def extract_text_from_txt(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        return f.read()
+# FastAPI app
+app = FastAPI()
+templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
-def extract_text_from_docx(file_path):
-    doc = Document(file_path)
-    return "\n".join([para.text for para in doc.paragraphs])
+# Load and save embedding cache
+def load_cache():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r") as f:
+            return json.load(f)
+    return {}
 
-def extract_text_from_pptx(file_path):
-    prs = Presentation(file_path)
-    text = ""
-    for slide in prs.slides:
-        for shape in slide.shapes:
-            if hasattr(shape, "text"):
-                text += shape.text + "\n"
-    return text
+def save_cache(cache):
+    with open(CACHE_FILE, "w") as f:
+        json.dump(cache, f)
 
-def extract_text_from_pdf(file_path):
-    text = ""
-    with pdfplumber.open(file_path) as pdf:
-        for page in pdf.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n"
-    return text
-
-def load_and_split_text(file_path):
-    ext = os.path.splitext(file_path)[1].lower()
+# Text extraction logic
+def extract_text(file_path, ext):
     if ext == ".txt":
-        full_text = extract_text_from_txt(file_path)
+        with open(file_path, "r", encoding="utf-8") as f:
+            return f.read()
     elif ext == ".docx":
-        full_text = extract_text_from_docx(file_path)
+        doc = Document(file_path)
+        return "\n".join([p.text for p in doc.paragraphs])
     elif ext == ".pptx":
-        full_text = extract_text_from_pptx(file_path)
+        prs = Presentation(file_path)
+        return "\n".join(shape.text for slide in prs.slides for shape in slide.shapes if hasattr(shape, "text"))
     elif ext == ".pdf":
-        full_text = extract_text_from_pdf(file_path)
-    else:
-        raise ValueError(f"Unsupported file type: {file_path}")
+        with pdfplumber.open(file_path) as pdf:
+            return "\n".join(page.extract_text() or "" for page in pdf.pages)
+    return ""
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+# Embedding logic
+def split_and_embed_text(full_text, filename):
+    splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=100)
     docs = splitter.create_documents([full_text])
-    return [doc.page_content for doc in docs]
-
-def embed_documents(docs, filename):
-    for i, chunk in enumerate(docs):
+    for i, doc in enumerate(docs):
         embedding = client.embeddings.create(
             model="text-embedding-3-small",
-            input=chunk
+            input=doc.page_content
         ).data[0].embedding
-
         collection.add(
-    documents=[f"{filename}\n\n{chunk}"],  # prepend filename as a tagk
-    embeddings=[embedding],
-    ids=[f"{filename}_chunk_{i}"]
-)
+            documents=[f"{filename}\n\n{doc.page_content}"],
+            embeddings=[embedding],
+            ids=[f"{filename}_chunk_{i}"]
+        )
 
+def embed_documents(folder_path):
+    cache = load_cache()
+    os.makedirs(folder_path, exist_ok=True)
 
-def process_all_files_in_folder(folder_path):
     with open(LOG_FILE, "w", encoding="utf-8") as log:
         for filename in os.listdir(folder_path):
-            file_path = os.path.join(folder_path, filename)
+            path = os.path.join(folder_path, filename)
             ext = os.path.splitext(filename)[1].lower()
+            if ext not in SUPPORTED_EXTENSIONS:
+                continue
+            mtime = os.path.getmtime(path)
+            if filename in cache and cache[filename] == mtime:
+                continue
+            try:
+                text = extract_text(path, ext)
+                split_and_embed_text(text, filename)
+                cache[filename] = mtime
+                log.write(f"✅ Embedded: {filename}\n")
+            except Exception as e:
+                log.write(f"❌ Failed: {filename} — {e}\n")
+    save_cache(cache)
 
-            if ext in SUPPORTED_EXTENSIONS:
-                print(f"[INFO] Processing: {filename}")
-                try:
-                    chunks = load_and_split_text(file_path)
-                    embed_documents(chunks, filename)
-                    log.write(f"✅ Embedded: {filename}\n")
-                except Exception as e:
-                    log.write(f"❌ Failed: {filename} — {str(e)}\n")
-                    print(f"[ERROR] Failed to process {filename}: {e}")
-            else:
-                log.write(f"⏩ Skipped: {filename} (unsupported)\n")
-                print(f"[SKIPPED] Unsupported file: {filename}")
+# Routes
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
-def ask_question(query):
+@app.post("/ask")
+async def ask_question(request: Request, question: str = Form(...)):
     query_embedding = client.embeddings.create(
         model="text-embedding-3-small",
-        input=query
+        input=question
     ).data[0].embedding
-
     results = collection.query(query_embeddings=[query_embedding], n_results=10)
     context = "\n".join(results["documents"][0])
-
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful assistant who only uses the provided context."},
-            {"role": "user", "content": f"Use this info to answer:\n\n{context}\n\nQuestion: {query}"}
+            {"role": "user", "content": f"Use this info to answer:\n\n{context}\n\nQuestion: {question}"}
         ]
     )
-    return response.choices[0].message.content
+    return {"answer": response.choices[0].message.content}
 
-if __name__ == "__main__":
-    BASE_DIR = os.path.dirname(__file__)
-    data_folder = os.path.join(BASE_DIR, "data")
+@app.post("/upload")
+async def upload_file(file: UploadFile = File(...)):
+    contents = await file.read()
+    os.makedirs(DATA_DIR, exist_ok=True)
+    file_path = os.path.join(DATA_DIR, file.filename)
+    with open(file_path, "wb") as f:
+        f.write(contents)
+    embed_documents(DATA_DIR)
+    return {"status": "success", "filename": file.filename}
 
-    print(f"Scanning files in: {data_folder}")
-    process_all_files_in_folder(data_folder)
-
-    print("\nHello! I'm Vira, your personal assistant for navigating your way through your job at the City of Winter Haven. Ask me anything! ('exit' to quit)\n")
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() in ["exit", "quit"]:
-            break
-        answer = ask_question(user_input)
-        print(f"\nVira: {answer}\n")
+@app.get("/logs", response_class=HTMLResponse)
+async def show_logs(request: Request):
+    logs = ""
+    if os.path.exists(LOG_FILE):
+        with open(LOG_FILE, "r", encoding="utf-8") as f:
+            logs = f.read()
+    return templates.TemplateResponse("logs.html", {"request": request, "logs": logs})
